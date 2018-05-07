@@ -27,9 +27,14 @@ function addSoundsToPage(sounds) {
 function addSoundToPage(sound, index) {
   const soundDiv = document.createElement('div');
   soundDiv.className = 'sound';
+
   const soundTitle = document.createElement('h2');
   soundTitle.textContent = sound.title;
   soundDiv.appendChild(soundTitle);
+
+  const soundKeyLink = document.createElement('h4');
+  soundKeyLink.textContent = sound.keyLink;
+  soundDiv.appendChild(soundKeyLink);
 
   const key = document.createElement('img');
   key.setAttribute('src', `keys/${keyCodes[index]}.svg`)

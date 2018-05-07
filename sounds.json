@@ -1,20 +1,25 @@
 [{
   "title": "C",
+  "keyLink": "A",
   "src": "C.wav"
 },
 {
   "title": "D",
+  "keyLink": "S",
   "src": "D.wav"
 },
 {
   "title": "E",
+  "keyLink": "D",
   "src": "E.wav"
 },
 {
   "title": "F",
+  "keyLink": "F",
   "src": "F.wav"
 },
 {
   "title": "G",
+  "keyLink": "G",
   "src": "G.wav"
 }]
