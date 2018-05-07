@@ -1,19 +1,20 @@
 [{
-  "title": "Kick",
-  "src": "kick.wav"
+  "title": "C",
+  "src": "C.wav"
 },
 {
-  "title": "Snare",
-  "src": "snare.wav"
+  "title": "D",
+  "src": "D.wav"
 },
 {
-  "title": "Clap",
-  "src": "clap.wav"
+  "title": "E",
+  "src": "E.wav"
 },
 {
-  "title": "Hat",
-  "src": "hat.wav"
-},{
-  "title": "Ride",
-  "src": "ride.wav"
+  "title": "F",
+  "src": "F.wav"
+},
+{
+  "title": "G",
+  "src": "G.wav"
 }]

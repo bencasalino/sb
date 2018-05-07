@@ -1,10 +1,10 @@
 const soundsElement = document.querySelector('#sounds');
-const stopButton = document.querySelector('#stopButton');
+// const stopButton = document.querySelector('#stopButton');
 const players = [];
 
-let keyCodes = [81, 87, 69, 82, 65, 83, 68, 70, 90, 88, 67, 86];
+let keyCodes = [65,83,68,70, 71];
 
-stopButton.addEventListener('click', stopAll);
+// stopButton.addEventListener('click', stopAll);
 
 (async () => {
   const sounds = await getSounds();
@@ -32,7 +32,7 @@ function addSoundToPage(sound, index) {
   soundDiv.appendChild(soundTitle);
 
   const key = document.createElement('img');
-  key.setAttribute('src', `keys/${keyCodes[index]}.png`)
+  key.setAttribute('src', `keys/${keyCodes[index]}.svg`)
   soundDiv.appendChild(key);
 
   const player = document.createElement('audio');
@@ -51,8 +51,9 @@ function addSoundToPage(sound, index) {
   soundsElement.appendChild(soundDiv);
 }
 
+
 function soundPress(div, player) {
-  div.style.background = '#0941a1';
+  div.style.background = 'linear-gradient(#333, #222)';
   player.currentTime = 0;
   player.play();
 }
@@ -65,7 +66,8 @@ function listenKeyPress() {
     const playerAndDiv = players[playerIndex];
     if (playerAndDiv && !playerAndDiv.keydown) {
       playerAndDiv.keydown = true;
-      playerAndDiv.key.style.transform = 'scaleY(0.75)';
+      playerAndDiv.key.style.transform = 'scaleY(0.87)';
+
       soundPress(playerAndDiv.soundDiv, playerAndDiv.player);
     }
   });
