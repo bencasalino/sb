@@ -1,7 +1,7 @@
 [{
   "title": "C",
   "keyLink": "A",
-  "src": "C.wav"
+  "src": "C3.wav"
 },
 {
   "title": "D",
@@ -22,4 +22,20 @@
   "title": "G",
   "keyLink": "G",
   "src": "G.wav"
-}]
+},
+{
+  "title": "A",
+  "keyLink": "H",
+  "src": "A.wav"
+},
+{
+  "title": "B",
+  "keyLink": "J",
+  "src": "B.wav"
+},
+{
+  "title": "C",
+  "keyLink": "K",
+  "src": "C4.wav"
+}
+]

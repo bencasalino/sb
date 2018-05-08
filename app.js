@@ -1,8 +1,8 @@
 const soundsElement = document.querySelector('#sounds');
 // const stopButton = document.querySelector('#stopButton');
 const players = [];
-
-let keyCodes = [65,83,68,70, 71];
+              // A S D F G H J K L
+let keyCodes = [65,83,68,70,71,72,74,75];
 
 // stopButton.addEventListener('click', stopAll);
 
@@ -19,7 +19,6 @@ async function getSounds() {
 
 function addSoundsToPage(sounds) {
   sounds.forEach(addSoundToPage);
-
   listenKeyPress();
 }
 
@@ -58,7 +57,7 @@ function addSoundToPage(sound, index) {
 
 
 function soundPress(div, player) {
-  div.style.background = 'linear-gradient(#333, #222)';
+  div.style.background = 'linear-gradient(#252d32, #1c2123)';
   player.currentTime = 0;
   player.play();
 }
